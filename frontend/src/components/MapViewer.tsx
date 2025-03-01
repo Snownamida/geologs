@@ -51,8 +51,8 @@ export default function MapViewer({ geoJsonData, bounds, startMarker, endMarker 
             zoomSnap={0.5}
         >
             <TileLayer
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                url="https://server.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.png"
+                attribution="ArcGIS"
             />
 
             <GeoJSON
