@@ -1205,6 +1205,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tmcw/togeojson@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "@tmcw/togeojson@npm:6.0.1"
+  peerDependencies:
+    "@types/geojson": "*"
+    "@xmldom/xmldom": ^0.9.5
+  checksum: 51eebee9b75a1c3f0724e9f42e508131629e6de400fda2510c14ddf6b427ce8bbdaa6f27fbe90b03d1d837dd45440b2c96c2f11d9e0be1971b2d4394eb2e9378
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.20.5":
   version: 7.20.5
   resolution: "@types/babel__core@npm:7.20.5"
@@ -2388,6 +2398,7 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": ^4.20250224.0
     "@eslint/js": ^9.17.0
+    "@tmcw/togeojson": ^6.0.1
     "@types/leaflet": ^1.9.16
     "@types/react": ^19.0.10
     "@types/react-dom": ^19.0.4
