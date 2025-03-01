@@ -1205,16 +1205,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tmcw/togeojson@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "@tmcw/togeojson@npm:6.0.1"
-  peerDependencies:
-    "@types/geojson": "*"
-    "@xmldom/xmldom": ^0.9.5
-  checksum: 51eebee9b75a1c3f0724e9f42e508131629e6de400fda2510c14ddf6b427ce8bbdaa6f27fbe90b03d1d837dd45440b2c96c2f11d9e0be1971b2d4394eb2e9378
-  languageName: node
-  linkType: hard
-
 "@types/babel__core@npm:^7.20.5":
   version: 7.20.5
   resolution: "@types/babel__core@npm:7.20.5"
@@ -1263,7 +1253,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/geojson@npm:*, @types/geojson@npm:^7946.0.16":
+"@types/geojson@npm:*":
   version: 7946.0.16
   resolution: "@types/geojson@npm:7946.0.16"
   checksum: d66e5e023f43b3e7121448117af1930af7d06410a32a585a8bc9c6bb5d97e0d656cd93d99e31fa432976c32e98d4b780f82bf1fd1acd20ccf952eb6b8e39edf2
@@ -1428,13 +1418,6 @@ __metadata:
   peerDependencies:
     vite: ^4.2.0 || ^5.0.0 || ^6.0.0
   checksum: d417f40d9259a1d5193152f7d9fee081d5bf41cbeef9662ae1123ccc1e26aa4b6b04bc82ebb8c4fbfde9516a746fb3af7da19fdd449819c30f0631daaa10a44b
-  languageName: node
-  linkType: hard
-
-"@xmldom/xmldom@npm:^0.9.8":
-  version: 0.9.8
-  resolution: "@xmldom/xmldom@npm:0.9.8"
-  checksum: f8d16ad3c8083312575850fa4f2c13a2b884a37021dbb0146c6b2575bd3ddbf4c900530b49a55a7f62088ecf9809173fd7138985e7e58ddab786578970e09c59
   languageName: node
   linkType: hard
 
@@ -2405,13 +2388,10 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": ^4.20250224.0
     "@eslint/js": ^9.17.0
-    "@tmcw/togeojson": ^6.0.1
-    "@types/geojson": ^7946.0.16
     "@types/leaflet": ^1.9.16
     "@types/react": ^19.0.10
     "@types/react-dom": ^19.0.4
     "@vitejs/plugin-react": ^4.3.4
-    "@xmldom/xmldom": ^0.9.8
     axios: ^1.8.1
     eslint: ^9.17.0
     eslint-plugin-react-hooks: ^5.0.0
