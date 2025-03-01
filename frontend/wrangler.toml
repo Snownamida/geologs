@@ -7,6 +7,3 @@ compatibility_date = "2025-02-28"
 bucket_name = "geologs"
 binding = "FILES"
 
-[[env.production.r2_buckets]]
-bucket_name = "geologs"
-binding = "FILES"
