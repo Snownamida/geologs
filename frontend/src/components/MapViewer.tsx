@@ -51,7 +51,7 @@ export default function MapViewer({ geoJsonData, bounds, startMarker, endMarker 
             zoomSnap={0.5}
         >
             <TileLayer
-                url="https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png"
+                url="https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png"
                 attribution='&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors, © <a href="https://carto.com/about-carto/">rastertiles/voyager</a>'
             />
 
