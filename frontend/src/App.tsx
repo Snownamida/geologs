@@ -4,6 +4,7 @@ import axios from 'axios';
 import L from 'leaflet';
 import { useEffect, useState } from 'react';
 import './App.css'; // 新增样式文件
+import 'bootstrap-icons/font/bootstrap-icons.css'; // 导入 Bootstrap Icons 的 CSS 文件
 import MapViewer from './components/MapViewer';
 
 export default function App() {

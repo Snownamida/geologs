@@ -1,0 +1,13 @@
+.marker {
+    text-shadow:
+        -1px -1px 3px #000,
+        1px -1px 3px #000,
+        -1px 1px 3px #000,
+        1px 1px 3px #000,
+        0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 增强描边效果 */
+.custom-marker i {
+    filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.7));
+}
