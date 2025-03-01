@@ -10,6 +10,8 @@ export default function App() {
   const [geoJsonData, setGeoJsonData] =
     useState<GeoJSON.FeatureCollection | null>(null);
   const [bounds, setBounds] = useState<L.LatLngBoundsExpression>();
+  const [startMarker, setStartMarker] = useState<L.LatLng | null>(null);
+  const [endMarker, setEndMarker] = useState<L.LatLng | null>(null);
   const [error, setError] = useState('');
 
   useEffect(() => {
@@ -44,6 +46,25 @@ export default function App() {
 
         setGeoJsonData(convertedData);
         setBounds(newBounds);
+
+        // 计算起始位置
+        let startPoint: L.LatLng | null = null;
+        let endPoint: L.LatLng | null = null;
+
+        convertedData.features.forEach(feature => {
+          if (feature.geometry.type === 'LineString') {
+            const coords = feature.geometry.coordinates;
+            if (coords.length > 0) {
+              // GPX坐标格式为 [经度, 纬度]，需要转换为LatLng的[纬度, 经度]
+              startPoint = L.latLng(coords[0][1], coords[0][0]);
+              endPoint = L.latLng(coords[coords.length - 1][1], coords[coords.length - 1][0]);
+            }
+          }
+        });
+        setStartMarker(startPoint);
+        setEndMarker(endPoint);
+
+
       } catch (err) {
         setError(err instanceof Error ? err.message : '加载轨迹失败');
       }
@@ -66,6 +87,8 @@ export default function App() {
             geoJsonData={geoJsonData}
             bounds={bounds}
             key={JSON.stringify(bounds)} // 强制重新渲染地图
+            startMarker={startMarker}
+            endMarker={endMarker}
           />
         ) : (
           <div className="loading">地图加载中...</div>
