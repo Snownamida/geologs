@@ -8,7 +8,7 @@ $latestFile = Get-ChildItem -Path $folderPath -Filter *.gpx |
 
 # 3. 执行上传命令（自动替换最新文件路径）
 if ($latestFile) {
-    npx wrangler r2 object put geologs/gpx/1.gpx -f $latestFile.FullName
+    npx -y wrangler r2 object put geologs/gpx/1.gpx -f $latestFile.FullName
     Write-Host "已上传最新文件：$($latestFile.Name)"
 } else {
     Write-Host "未找到.gpx文件"
