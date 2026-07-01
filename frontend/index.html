@@ -1,15 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + React + TS</title>
+  <title>Geologs — 在线 GPX 轨迹查看器 | Online GPX Track Viewer</title>
+  <meta name="description"
+    content="Geologs 是一个免费开源的在线 GPX 轨迹查看器：在地图上浏览 GPS 轨迹，查看距离、时长、起终点；也可以直接把本地 GPX 文件拖进页面，完全在浏览器内解析，不会上传任何数据。Free open-source GPX track viewer — drop a GPX file to view it on a map, parsed entirely in your browser." />
+  <link rel="canonical" href="https://geologs.pages.dev/" />
+  <meta name="theme-color" content="#2c3e50" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Geologs" />
+  <meta property="og:title" content="Geologs — 在线 GPX 轨迹查看器" />
+  <meta property="og:description"
+    content="在地图上浏览 GPS 轨迹，或将本地 GPX 文件拖入页面即可查看 — 完全在浏览器内解析，不上传任何数据。" />
+  <meta property="og:url" content="https://geologs.pages.dev/" />
+  <meta property="og:image" content="https://geologs.pages.dev/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <!-- 静态可索引内容：React 挂载后会被替换 -->
+    <header style="background:#2c3e50;color:#fff;padding:0.75rem 1rem;">
+      <h1 style="font-size:1.25rem;">Geologs — GPX 轨迹查看器</h1>
+    </header>
+    <p style="padding:1rem;max-width:60ch;">
+      Geologs 是一个免费开源的在线 GPX 轨迹查看器。在地图上浏览 GPS 轨迹，查看距离、时长与起终点；
+      也可以把本地 GPX 文件直接拖进页面查看 — 文件完全在浏览器内解析，不会上传到任何服务器。
+      Free open-source GPX track viewer: drop a local GPX file onto the map — parsed entirely in your
+      browser, nothing is uploaded.
+    </p>
+  </div>
+  <noscript>
+    <p style="padding:1rem;">Geologs 需要启用 JavaScript 才能显示地图。This GPX viewer requires JavaScript.</p>
+  </noscript>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 
