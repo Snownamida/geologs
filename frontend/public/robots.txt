@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /files/
 
-Sitemap: https://geologs.pages.dev/sitemap.xml
+Sitemap: https://geologs.snownamida.top/sitemap.xml

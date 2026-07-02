@@ -1,6 +1,6 @@
 # Geologs
 
-**在线 GPX 轨迹查看器 / Online GPX track viewer** — <https://geologs.pages.dev>
+**在线 GPX 轨迹查看器 / Online GPX track viewer** — <https://geologs.snownamida.top>
 
 在地图上浏览 GPS 轨迹：距离、时长、起终点一目了然。也可以把本地 `.gpx` 文件直接拖进页面查看 —
 文件**完全在浏览器内解析，不会上传到任何服务器**。
